@@ -1,0 +1,18 @@
+# Application Name
+spring:
+  application:
+    name: app
+logging:
+  file: logs
+com:
+  alipay:
+    sofa:
+      boot:
+        disable-jvm-first: true
+        skip-jvm-reference-health-check: true
+        skip-extension-health-check: true
+      rpc:
+        registry-address: consul://127.0.0.1:8500
+        bolt-port: 12346
+server:
+  port: 8088
